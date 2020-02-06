@@ -1,6 +1,6 @@
 from __future__ import absolute_import
 import numpy as np
-
+"""
 from keras import backend as K
 from keras import activations
 from keras import initializers
@@ -10,6 +10,18 @@ from keras.engine import Layer
 from keras.engine import InputSpec
 from keras.legacy import interfaces
 from keras.layers import Recurrent
+"""
+
+from tensorflow.python.keras import backend as K
+from tensorflow.python.keras import activations
+from tensorflow.python.keras import initializers
+from tensorflow.python.keras import regularizers
+from tensorflow.python.keras import constraints
+from tensorflow.python.keras.engine import Layer
+from tensorflow.python.keras.engine import InputSpec
+from tensorflow.python.keras.legacy import interfaces
+from tensorflow.python.keras.layers import Recurrent
+
 
 
 def _time_distributed_dense(x, w, b=None, dropout=None,
