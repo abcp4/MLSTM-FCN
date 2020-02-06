@@ -17,8 +17,8 @@ from tensorflow.python.keras import activations
 from tensorflow.python.keras import initializers
 from tensorflow.python.keras import regularizers
 from tensorflow.python.keras import constraints
-from tensorflow.python.keras.engine import Layer
-from tensorflow.python.keras.engine import InputSpec
+from keras.engine import Layer
+from keras.engine import InputSpec
 from tensorflow.python.keras.legacy import interfaces
 from tensorflow.python.keras.layers import Recurrent
 
