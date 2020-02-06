@@ -20,8 +20,7 @@ from tensorflow.python.keras import constraints
 from keras.engine import Layer
 from keras.engine import InputSpec
 from keras.legacy import interfaces
-from tensorflow.python.keras.layers import Recurrent
-
+from keras.layers import Recurrent
 
 
 def _time_distributed_dense(x, w, b=None, dropout=None,
