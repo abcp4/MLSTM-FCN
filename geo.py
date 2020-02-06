@@ -199,6 +199,6 @@ def squeeze_excite_block(input):
 if __name__ == "__main__":
     model = generate_model_2()
 
-    train_model(model, DATASET_INDEX, dataset_prefix='???????', epochs=500, batch_size=128)
+    train_model(model, DATASET_INDEX, dataset_prefix='eeg', epochs=500, batch_size=128)
 
-    evaluate_model(model, DATASET_INDEX, dataset_prefix='???????', batch_size=128)
+    evaluate_model(model, DATASET_INDEX, dataset_prefix='eeg', batch_size=128)
