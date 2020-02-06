@@ -1,7 +1,12 @@
 
+"""
 from tensorflow.python.keras.layers import Input, Dense, LSTM, multiply, concatenate, Activation, Masking, Reshape
 from tensorflow.python.keras.layers import Conv1D, BatchNormalization, GlobalAveragePooling1D, Permute, Dropout
 from tensorflow.python.keras.models import Model
+"""
+from keras.layers import Input, Dense, LSTM, multiply, concatenate, Activation, Masking, Reshape
+from keras.layers import Conv1D, BatchNormalization, GlobalAveragePooling1D, Permute, Dropout
+from keras.models import Model
 
 from utils.constants import MAX_NB_VARIABLES, NB_CLASSES_LIST, MAX_TIMESTEPS_LIST
 from utils.keras_utils import train_model, evaluate_model, set_trainable
