@@ -19,7 +19,7 @@ from tensorflow.python.keras import regularizers
 from tensorflow.python.keras import constraints
 from keras.engine import Layer
 from keras.engine import InputSpec
-from tensorflow.python.keras.legacy import interfaces
+from keras.legacy import interfaces
 from tensorflow.python.keras.layers import Recurrent
 
 
