@@ -12,7 +12,7 @@ from utils.constants import MAX_NB_VARIABLES, NB_CLASSES_LIST, MAX_TIMESTEPS_LIS
 from utils.keras_utils import train_model, evaluate_model, set_trainable
 from utils.layer_utils import AttentionLSTM
 
-DATASET_INDEX = 15
+DATASET_INDEX = 48
 
 MAX_TIMESTEPS = MAX_TIMESTEPS_LIST[DATASET_INDEX]
 MAX_NB_VARIABLES = MAX_NB_VARIABLES[DATASET_INDEX]
@@ -199,6 +199,6 @@ def squeeze_excite_block(input):
 if __name__ == "__main__":
     model = generate_model_2()
 
-    train_model(model, DATASET_INDEX, dataset_prefix='geo', epochs=500, batch_size=128)
+    train_model(model, DATASET_INDEX, dataset_prefix='geo', epochs=500, batch_size=64)
 
-    evaluate_model(model, DATASET_INDEX, dataset_prefix='geo', batch_size=128)
+    evaluate_model(model, DATASET_INDEX, dataset_prefix='geo', batch_size=64)
