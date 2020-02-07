@@ -12,7 +12,7 @@ from utils.constants import MAX_NB_VARIABLES, NB_CLASSES_LIST, MAX_TIMESTEPS_LIS
 from utils.keras_utils import train_model, evaluate_model, set_trainable
 from utils.layer_utils import AttentionLSTM
 
-DATASET_INDEX = 13
+DATASET_INDEX = 48
 
 MAX_TIMESTEPS = MAX_TIMESTEPS_LIST[DATASET_INDEX]
 MAX_NB_VARIABLES = MAX_NB_VARIABLES[DATASET_INDEX]
