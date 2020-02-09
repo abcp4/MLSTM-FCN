@@ -37,6 +37,8 @@ def load_dataset_at(index, fold_index=None, normalize_timeseries=False, verbose=
         raise FileNotFoundError('File %s not found!' % (TRAIN_FILES[index]))
 
     is_timeseries = True
+    print('Sample: ')
+    print(X_train[0])
 
     # extract labels Y and normalize to [0 - (MAX - 1)] range
     nb_classes = len(np.unique(y_train))
