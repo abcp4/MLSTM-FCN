@@ -199,6 +199,6 @@ def squeeze_excite_block(input):
 if __name__ == "__main__":
     model = generate_model_2()
 
-    train_model(model, DATASET_INDEX, dataset_prefix='geo', epochs=500, batch_size=16)
+    train_model(model, DATASET_INDEX, dataset_prefix='geo', epochs=500, batch_size=32,normalize_timeseries=True)
 
-    evaluate_model(model, DATASET_INDEX, dataset_prefix='geo', batch_size=16)
+    evaluate_model(model, DATASET_INDEX, dataset_prefix='geo', batch_size=32,normalize_timeseries=True)
