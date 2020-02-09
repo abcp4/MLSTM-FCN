@@ -66,6 +66,8 @@ def load_dataset_at(index, fold_index=None, normalize_timeseries=False, verbose=
         print("Number of train samples : ", X_train.shape[0], "Number of test samples : ", X_test.shape[0])
         print("Number of classes : ", nb_classes)
         print("Sequence length : ", X_train.shape[-1])
+    print('Sample: ')
+    print(X_train[0])
 
     return X_train, y_train, X_test, y_test, is_timeseries
 
